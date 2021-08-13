@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <title>Frontend Mentor | Tip calculator app</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Frontend Mentor | Tip calculator app</title>
 
 </head>
+
 <body>
+    <h1>Splitter</h1>
+    <div class="container">
+        <div class="commands">
+            <div class="namefield">
+                <label for="bill">Bill</label>
+                <input type="number" name="bill" id="bill" value="0">
+            </div>
+            <div class="select">
+                <p>Select Tip %</p>
+                <div>
+                    <input type="radio" id="5" name="radios" value="5">
+                    <label for="5">5%</label>
+                    <input type="radio" id="10" name="radios" value="10">
+                    <label for="10">10%</label>
+                    <input type="radio" id="15" name="radios" value="15">
+                    <label for="15">15%</label>
+                    <input type="radio" id="25" name="radios" value="25">
+                    <label for="25">25%</label>
+                    <input type="radio" id="50" name="radios" value="50">
+                    <label for="50">50%</label>
+                    <input type="radio" id="custom" name="radios" value="0">
+                    <label for="custom">Custom</label>
+                </div>
+            </div>
+            <div class="numberfield">
+                <label for="numberpeople">Number of People</label>
+                <input type="number" name="numberpeople" id="numberpeople" value="0">
+            </div>
+        </div>
+        <div class="results">
+            <div>
+                <p>Tip Amount</p>
+                <p>/ person</p>
+                <div id="result1"></div>
+            </div>
+            <div>
+                <p>Total</p>
+                <p> person</p>
+                <div id="result2"></div>
+            </div>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
