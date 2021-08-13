@@ -1,7 +1,32 @@
-body, html {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding:0;
-    margin:0;
+:root {
+  --cyan: hsl(172, 67%, 45%);
+  --darkcyan: hsl(183, 100%, 15%);
+  --neutralcyan1: hsl(186, 14%, 43%);
+  --neutralcyan2: hsl(184, 14%, 56%);
+  --lightcyan1: hsl(185, 41%, 84%);
+  --lightwhite2: hsl(189, 41%, 97%);
 }
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+  font-family: "Space Mono";
+  src: url(./assets/font/SpaceMono-Regular.ttf);
+}
+@font-face {
+  font-family: "Space Mono";
+  font-weight: bold;
+  src: url(./assets/font/SpaceMono-Bold.ttf);
+}
+body,
+html {
+  font-family: "Space Mono";
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
