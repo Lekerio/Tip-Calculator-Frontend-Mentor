@@ -22,7 +22,8 @@ html {
 }
 * {
   font-family: "Space Mono";
-  font-weight: 400;
+  font-weight: 700;
+  color:var(--neutralcyan2)
 }
 .attribution {
   font-size: 11px;
@@ -73,7 +74,7 @@ h1 {
 .select div label {
   display: flex;
   color: white;
-  background-color: var(--darkcyan);
+  background-color: hsl(183, 100%, 15%);
   border-radius: 8px;
   align-items: center;
   justify-content: center;
@@ -97,13 +98,27 @@ input[type="number"] {
 .dollarsection::before {
   content: "";
   background-image: url(./assets/icon-dollar.svg);
-  display: inline-flex;
-  background-repeat: no-repeat;
-  height: 15px;
-  width: 15px;
-  background-position: center center;
+  display:inline-flex;
+  position:absolute;
+  background-repeat:no-repeat;
+  height: 46px;
+  width: 46px;
+  background-position-x: center;
+  background-position-y: 11px;
 }
 .dollarsection {
   height: 46px;
   background-color: #f3f8fb;
+  max-width:max-content;
 }
+
+#custom:checked + label {
+background-color:var(--cyan);
+}
+
+#custom + label {
+  background-color: #f3f8fb;
+  color:var(--darkcyan);
+}
+
+
