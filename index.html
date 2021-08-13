@@ -18,7 +18,7 @@
         <div class="commands">
             <div class="namefield">
                 <label for="bill">Bill</label>
-               <span class="dollarsection"><input type="number" name="bill" id="bill" value="0"></span>
+                <span class="dollarsection"><input type="number" name="bill" id="bill" value="0"></span>
             </div>
             <div class="select">
                 <p>Select Tip %</p>
@@ -39,22 +39,27 @@
             </div>
             <div class="numberfield">
                 <label for="numberpeople">Number of People</label>
-                <input type="number" name="numberpeople" id="numberpeople" value="0">
+                <span><input type="number" name="numberpeople" id="numberpeople" value="0"></span>
             </div>
         </div>
-        <div class="results">
-            <div>
-                <p>Tip Amount</p>
-                <p>/ person</p>
-                <div id="result1"></div>
+        <div class="result_Container">
+            <div class="tip">
+                <div>
+                    <p>Tip Amount</p>
+                    <p class="grised">/ person</p>
+                </div>
+                <div id="result1">0</div>
             </div>
-            <div>
-                <p>Total</p>
-                <p> person</p>
-                <div id="result2"></div>
+            <div class="tip">
+                <div>
+                    <p>Total</p>
+                    <p class="grised"> person</p>
+                </div>
+                <div id="result2">0</div>
             </div>
             <button id="reset">Reset</button>
         </div>
+
     </div>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

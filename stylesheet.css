@@ -23,7 +23,7 @@ html {
 * {
   font-family: "Space Mono";
   font-weight: 700;
-  color:var(--neutralcyan2)
+  color: var(--neutralcyan2);
 }
 .attribution {
   font-size: 11px;
@@ -51,6 +51,7 @@ h1 {
   padding: 34px;
   max-width: 705px;
   min-width: min-content;
+  margin:auto;
 }
 .namefield {
   display: flex;
@@ -98,9 +99,9 @@ input[type="number"] {
 .dollarsection::before {
   content: "";
   background-image: url(./assets/icon-dollar.svg);
-  display:inline-flex;
-  position:absolute;
-  background-repeat:no-repeat;
+  display: inline-flex;
+  position: absolute;
+  background-repeat: no-repeat;
   height: 46px;
   width: 46px;
   background-position-x: center;
@@ -109,16 +110,76 @@ input[type="number"] {
 .dollarsection {
   height: 46px;
   background-color: #f3f8fb;
-  max-width:max-content;
+  max-width: max-content;
 }
 
 #custom:checked + label {
-background-color:var(--cyan);
+  background-color: var(--cyan);
 }
 
 #custom + label {
   background-color: #f3f8fb;
-  color:var(--darkcyan);
+  color: var(--darkcyan);
+}
+.numberfield {
+  display:flex;
+  flex-direction: column;
+}
+.numberfield input {
+  text-align:right;
+  font-weight:700;
 }
 
+.numberfield span:before {
+  content: "";
+  background-image: url(./assets/icon-person.svg);
+  display: inline-flex;
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 46px;
+  width: 46px;
+  background-position-x: center;
+  background-position-y: 11px;
+}
 
+.result_Container {
+  background-color: var(--darkcyan);
+  border-radius:8px;
+  display:flex;
+  flex-direction:column;
+}
+.tip {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+.result_Container div p {
+  color:white;
+}
+.grised {
+  color: var(--neutralcyan1)!important;
+}
+#result1, #result2 {
+  padding-right: 20px;
+  color:var(--cyan);
+  font-size:30px;
+}
+#result1:before, #result2:before {
+  content: "$";
+  font-size:30px;
+  
+}
+.result_Container div:not(#result1,#result2) {
+  padding-left:15px;
+}
+
+.result_Container button {
+  border : 0;
+  background-color: var(--cyan);
+  width:280px;
+  margin:auto;
+  border-radius:5px;
+  height:46px;
+  margin-bottom:10px;
+}
